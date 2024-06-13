@@ -1,11 +1,5 @@
 # ninja log v5
-19	383	7399325637469536	CMakeFiles/Paradigms_Assignment3.dir/main.cpp.obj	cfda48e6cba05d2e
-384	465	7399325638259645	Paradigms_Assignment3.exe	faf6fb2867fff25c
-13	547	7399293801990241	CMakeFiles/Paradigms_Assignment3.dir/firstVersion.cpp.obj	a13adecade8f899d
-15	274	7399753155752957	build.ninja	b97ea172d5bffa56
-4	446	7399753704114993	CMakeFiles/Paradigms_Assignment3.dir/main.cpp.obj	cfda48e6cba05d2e
-446	654	7399753706172711	Paradigms_Assignment3.exe	faf6fb2867fff25c
-4	523	7399755672366000	CMakeFiles/Paradigms_Assignment3.dir/main.cpp.obj	cfda48e6cba05d2e
-524	616	7399755673265976	Paradigms_Assignment3.exe	faf6fb2867fff25c
 16	445	7399756093511772	CMakeFiles/Paradigms_Assignment3.dir/main.cpp.obj	cfda48e6cba05d2e
 446	541	7399756094431863	Paradigms_Assignment3.exe	faf6fb2867fff25c
+13	547	7399293801990241	CMakeFiles/Paradigms_Assignment3.dir/firstVersion.cpp.obj	a13adecade8f899d
+15	274	7399758968388652	build.ninja	b97ea172d5bffa56

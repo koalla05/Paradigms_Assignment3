@@ -1,30 +1,7 @@
 #include <iostream>
 #include <string.h>
+#include <windows.h>
 using namespace std;
-
-char* encrypt(char* rawText, int key) {
-    for (int i=0; i < strlen(rawText); i++) {
-        if (rawText[i] >= 'A' && rawText[i] <= 'Z') {
-            rawText[i] = (rawText[i] + key - 'A') % 26 + 'A';
-        }
-        else if (rawText[i] >= 'a' && rawText[i] <= 'z') {
-            rawText[i] = (rawText[i] + key - 'a') % 26 + 'a';
-        }
-    }
-    return rawText;
-}
-
-char* decrypt(char* rawText, int key) {
-    for (int i=0; i < strlen(rawText); i++) {
-        if (rawText[i] >= 'A' && rawText[i] <= 'Z') {
-            rawText[i] = ((rawText[i] - key - 'A' + 26) % 26) + 'A';
-        }
-        else if (rawText[i] >= 'a' && rawText[i] <= 'z') {
-            rawText[i] = (rawText[i] - key - 'a' + 26) % 26 + 'a';
-        }
-    }
-    return rawText;
-}
 
 int main() {
     int key;
@@ -53,6 +30,30 @@ int main() {
 
     cout << "Enter the key: " << endl;
     cin >> key;
+
+
+    HINSTANCE handle = LoadLibrary(TEXT("cezar.dll"));
+    if (handle == nullptr || handle == INVALID_HANDLE_VALUE)
+    {
+        cout << "Lib not found" << endl;
+        return -1;
+    }
+
+    typedef char*(*function_ptr)(char*, int);
+    function_ptr encrypt = (function_ptr)GetProcAddress(handle, TEXT("encrypt"));
+    if (encrypt == nullptr)
+    {
+        cout << "Proc not found" << endl;
+        return -1;
+    }
+
+    typedef char*(*function_ptr)(char*, int);
+    function_ptr decrypt = (function_ptr)GetProcAddress(handle, TEXT("decrypt"));
+    if (encrypt == nullptr)
+    {
+        cout << "Proc not found" << endl;
+        return -1;
+    }
 
     char* encryptedText = encrypt(text, key);
     cout << encryptedText << endl;

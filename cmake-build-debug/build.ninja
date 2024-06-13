@@ -55,6 +55,12 @@ build CMakeFiles/Paradigms_Assignment3.dir/main.cpp.obj: CXX_COMPILER__Paradigms
   OBJECT_DIR = CMakeFiles\Paradigms_Assignment3.dir
   OBJECT_FILE_DIR = CMakeFiles\Paradigms_Assignment3.dir
 
+build CMakeFiles/Paradigms_Assignment3.dir/cezar.cpp.obj: CXX_COMPILER__Paradigms_Assignment3_unscanned_Debug C$:/Users/kovko/CLionProjects/Paradigms_Assignment3/cezar.cpp || cmake_object_order_depends_target_Paradigms_Assignment3
+  DEP_FILE = CMakeFiles\Paradigms_Assignment3.dir\cezar.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Paradigms_Assignment3.dir
+  OBJECT_FILE_DIR = CMakeFiles\Paradigms_Assignment3.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Paradigms_Assignment3
@@ -63,7 +69,7 @@ build CMakeFiles/Paradigms_Assignment3.dir/main.cpp.obj: CXX_COMPILER__Paradigms
 #############################################
 # Link the executable Paradigms_Assignment3.exe
 
-build Paradigms_Assignment3.exe: CXX_EXECUTABLE_LINKER__Paradigms_Assignment3_Debug CMakeFiles/Paradigms_Assignment3.dir/main.cpp.obj
+build Paradigms_Assignment3.exe: CXX_EXECUTABLE_LINKER__Paradigms_Assignment3_Debug CMakeFiles/Paradigms_Assignment3.dir/main.cpp.obj CMakeFiles/Paradigms_Assignment3.dir/cezar.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Paradigms_Assignment3.dir
