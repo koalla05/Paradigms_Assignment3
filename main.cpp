@@ -32,23 +32,23 @@ int main() {
     cin >> key;
 
 
-    HINSTANCE handle = LoadLibrary(TEXT("cezar.dll"));
+    HINSTANCE handle = LoadLibrary(TEXT("C:\\Users\\kovko\\CLionProjects\\Paradigms_Assignment3\\cezar.dll"));
     if (handle == nullptr || handle == INVALID_HANDLE_VALUE)
     {
         cout << "Lib not found" << endl;
         return -1;
     }
 
-    typedef char*(*function_ptr)(char*, int);
-    function_ptr encrypt = (function_ptr)GetProcAddress(handle, TEXT("encrypt"));
+    typedef char*(*function1_ptr)(char*, int);
+    function1_ptr encrypt = (function1_ptr)GetProcAddress(handle, TEXT("encrypt"));
     if (encrypt == nullptr)
     {
         cout << "Proc not found" << endl;
         return -1;
     }
 
-    typedef char*(*function_ptr)(char*, int);
-    function_ptr decrypt = (function_ptr)GetProcAddress(handle, TEXT("decrypt"));
+    typedef char*(*function2_ptr)(char*, int);
+    function2_ptr decrypt = (function2_ptr)GetProcAddress(handle, TEXT("decrypt"));
     if (encrypt == nullptr)
     {
         cout << "Proc not found" << endl;

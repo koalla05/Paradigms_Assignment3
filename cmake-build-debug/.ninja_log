@@ -1,5 +1,12 @@
 # ninja log v5
-16	445	7399756093511772	CMakeFiles/Paradigms_Assignment3.dir/main.cpp.obj	cfda48e6cba05d2e
-446	541	7399756094431863	Paradigms_Assignment3.exe	faf6fb2867fff25c
+19	1603	7399783090965410	CMakeFiles/Paradigms_Assignment3.dir/main.cpp.obj	cfda48e6cba05d2e
+187	267	7399788539790249	Paradigms_Assignment3.exe	65563f522327b9f7
 13	547	7399293801990241	CMakeFiles/Paradigms_Assignment3.dir/firstVersion.cpp.obj	a13adecade8f899d
-15	274	7399758968388652	build.ninja	b97ea172d5bffa56
+2	293	7399790963464108	build.ninja	b97ea172d5bffa56
+9	76	7399782440857315	CMakeFiles/Paradigms_Assignment3.dir/cezar.cpp.obj	25d3779c923c7932
+27	103	7399788538190285	CMakeFiles/cezar.dir/cezar.cpp.obj	15630e465255873a
+104	187	7399788538990297	libcezar.dll	a2e963a62d9ff558
+104	187	7399788538990297	libcezar.dll.a	a2e963a62d9ff558
+5	124	7399791006277190	Paradigms_Assignment3.exe	a469f34776b87987
+5	1630	7399792898691759	CMakeFiles/Paradigms_Assignment3.dir/main.cpp.obj	cfda48e6cba05d2e
+1631	1739	7399792899493574	Paradigms_Assignment3.exe	a469f34776b87987

@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "Paradigms_Assignment3",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -39,8 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Paradigms_Assignment3::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Paradigms_Assignment3-Debug-976b02a839cd3b08a56a.json",
+					"jsonFile" : "target-Paradigms_Assignment3-Debug-569fa4437b83da35f0d5.json",
 					"name" : "Paradigms_Assignment3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cezar::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cezar-Debug-45be9f12dd90ee74c0af.json",
+					"name" : "cezar",
 					"projectIndex" : 0
 				}
 			]
