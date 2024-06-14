@@ -2,6 +2,7 @@
 
 extern "C" {
     __declspec(dllexport) char* encrypt(char* rawText, int key) {
+        key = key % 26;
         for (int i=0; i < strlen(rawText); i++) {
             if (rawText[i] >= 'A' && rawText[i] <= 'Z') {
                 rawText[i] = (rawText[i] + key - 'A') % 26 + 'A';
@@ -14,6 +15,7 @@ extern "C" {
     }
 
     __declspec(dllexport) char* decrypt(char* rawText, int key) {
+        key = key % 26;
         for (int i=0; i < strlen(rawText); i++) {
             if (rawText[i] >= 'A' && rawText[i] <= 'Z') {
                 rawText[i] = ((rawText[i] - key - 'A' + 26) % 26) + 'A';

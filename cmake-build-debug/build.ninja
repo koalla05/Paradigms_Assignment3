@@ -102,7 +102,7 @@ build Paradigms_Assignment3.exe: CXX_EXECUTABLE_LINKER__Paradigms_Assignment3_De
   FLAGS = -g
   LINK_LIBRARIES = libcezar.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Paradigms_Assignment3.dir
-  POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\kovko\CLionProjects\Paradigms_Assignment3\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E copy C:/Users/kovko/CLionProjects/Paradigms_Assignment3/cmake-build-debug/libcezar.dll C:/Users/kovko/CLionProjects/Paradigms_Assignment3/cmake-build-debug"
+  POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_FILE = Paradigms_Assignment3.exe
   TARGET_IMPLIB = libParadigms_Assignment3.dll.a
